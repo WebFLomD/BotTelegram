@@ -1,0 +1,22 @@
+
+import telebot 
+from telebot import types 
+import os 
+import logging 
+ 
+# Настройка логирования 
+logging.basicConfig(level=logging.INFO) 
+logger = logging.getLogger(__name__) 
+ 
+# Токен Бота 
+TOKEN_BOT_TELEGRAM = '7335892711:AAHLoPwFkB1WRks4pITFylV8bARfKEOcZU4' 
+ 
+# Список администраторов (ID пользователей) 
+ADMIN_IDS = [964550681] 
+ 
+# Категории и пути к ним 
+CATEGORIES = { 
+    'html': 'data/html/', 
+    'css': 'data/css/', 
+    'yii': 'data/yii/' 
+}
